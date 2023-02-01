@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Retro Portfolio</title>
+    <style>
+      body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: lightblue;
+  color: brown;
+}
+
+header nav {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-self: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: brown;
+  padding: 0 10px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+main section {
+  width: 30%;
+}
+
+main section h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: center;
+}
+
+form label, form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form input[type="submit"] {
+  width: auto;
+  background-color: brown;
+  color: lightblue;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h1>Welcome 2 my website</h1>
+        <p>This is a place for silliness and things that i like.</p>
+      </section>
