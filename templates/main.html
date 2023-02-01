@@ -1,88 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Retro Portfolio</title>
-    <style>
-      body {
-  font-family: 'Roboto Mono', monospace;
-  background-color: lightblue;
-  color: brown;
-}
 
-header nav {
-  display: flex;
-  align-self: center;
-  justify-content: space-between;
-  padding: 20px;
-}
+<head>
+  <meta charset="utf-8">
+  <title>Retro Portfolio</title>
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #add8e6;
+      color: brown;
+    }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  align-self: center;
-}
+    header nav {
+      display: flex;
+      align-self: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
 
-header nav ul li a {
-  text-decoration: none;
-  color: brown;
-  padding: 0 10px;
-}
+    header nav ul {
+      list-style: none;
+      display: flex;
+      align-self: center;
+    }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
+    header nav ul li a {
+      text-decoration: none;
+      color: brown;
+      padding: 0 10px;
+    }
 
-main section {
-  width: 30%;
-}
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
 
-main section h2 {
-  text-align: center;
-}
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "item1 item2 item3";
+      padding: 40px;
+      font-size: 25px;
+    }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-self: center;
-}
+    .item1 {
+      grid-area: item1;
+    }
 
-form label, form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-}
+    .item2 {
+      grid-area: item2;
+    }
 
-form input[type="submit"] {
-  width: auto;
-  background-color: brown;
-  color: lightblue;
-}
+    .item3 {
+      grid-area: item3;
+    }
 
-footer {
-  text-align: center;
-  padding: 20px;
-}
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <h1>Welcome 2 my website</h1>
-        <p>This is a place for silliness and things that i like.</p>
-      </section>
+
+
+
+
+
+
+    main section {
+      width: 30%;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="item1">
+      <pre>
+               ,,==="""""""===,,
+           ,==""' |\ |   /\   `""==,
+        ,="'|\    | \|  /__\   /\  `"=,
+      /"    |,"\  |  | /'  `\ /  )     "\
+    /"  ,"  |                 `\/    /|  "\
+   /'  |   ,                       /",|   `\
+  /'   ",/"                           |    `\
+ /'      I=I=I               ,d8ba,___      `\
+/'     I=8=8=8=I_I_          88888P"""       `\
+|   xXXXXXXXXXXXXXXXxIxx    ,888"             |
+| ~XXXXXXXXXXXXXXX~-~-~-~-~ d888~-~-~-~-~-~-~ |
+| ~-~-~-~-~-~-~-~-,aad888ba,8888,-~-~-~-~-~-~ |
+| ~-~-~-~-~-~-,ad888888888888888b-~-~-~-~-~-~ |
+\ ~-~-~-~-~,ad8888888888888888888-~-~-~-~-~-~ /
+`\ -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~- /'
+ `\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,-,~~~~~ /'
+  `\    /"\         1 9 9 4        \ /\    /'
+   `\  "\,/'                   |\   `\ `  /'
+     "\      /""\   |    |     |,'\     /"
+       `"=,_ \__/   |__  |__   |    ,="'  
+          `""=,__             __,=""'     
+               ``""=========""''
+      </pre>
+    </div>
+    <div class="item2">
+      <h1>Welcome 2 my website</h1>
+      <p> This is a place for silliness and things that i like.<p>
+      <img src="images/furcoat.jpg" alt="me">
+    </div>
+    <div class="item3">
+      <pre>
+        ⠀⠀⠀⠀⣠⣀⣀⣀⣄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣻⣿⡁⠀⠈⢹⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣵⣿⠁⠀⠀⢼⣀⣀⣀⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣠⠾⠛⠁⠀⠀⠀⠀⠀⠁⠉⠉⠉⠛⠲⣦⡀
+⠀⠀⠀⠀⠀⣠⡞⠁⠀⠀⠀⣀⣤⣤⣤⣤⣤⣀⣀⠀⠀⠀⣼⠟
+⠀⠀⠀⠀⣼⡟⠀⠀⠀⢰⣿⣭⣿⣿⣿⣭⣖⣫⠟⣛⠷⣾⠃⠀
+⠀⠀⠀⢰⣿⡇⠀⠀⠀⠸⣾⡛⠀⠀⠀⠀⠉⠙⠛⠶⢾⠃⠀⠀
+⠀⠀⠀⣸⡥⢿⡀⠀⠀⠀⠈⠙⠳⢦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠻⣶⠋⡻⣦⡀⠀⠀⠀⠀⠀⠀⠉⠛⠳⢦⣄⠀⠀⠀⠀
+⠀⠀⠀⠀⠻⣯⣠⠜⡹⠷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠈⠻⣦⠀⠀
+⠀⠀⠀⠀⠀⠈⠛⠾⣤⣖⣩⢜⡫⢟⣶⣤⣀⠀⠀⠀⠀⠘⣧⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠳⢯⣖⡩⠽⣷⠀⠀⠀⠀⢹⡀
+⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡖⠊⣿⠀⠀⠀⠀⢸⠇
+⠀⠀⣤⣶⣶⡟⠓⠶⢤⣄⣀⡀⠀⠀⣸⣷⡿⠋⠀⠀⠀⢀⣾⠀
+⠀⣼⣛⣥⡟⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⣠⣾⡿⠀
+⠘⢿⣥⠟⢷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣾⣿⡟⠁⠀
+⠀⠀⠈⠻⣯⣞⡩⠟⣻⠿⣻⢾⡆⠀⠀⠘⣟⣱⣿⠿⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠙⠛⠛⠻⣧⢼⡇⠀⠀⠀⣿⠋⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡷⢺⣧⣤⣤⣤⣿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣟⣡⣿⢛⣵⣷⠟⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      </pre>
+    </div>
+  </div>
+</body>
+
+</html>
