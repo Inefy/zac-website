@@ -4,96 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Retro Portfolio</title>
-  <style>
-    body {
-      font-family: 'Roboto Mono', monospace;
-      background-color: #add8e6;
-      color: brown;
-    }
-
-    header nav {
-      display: flex;
-      align-self: center;
-      justify-content: space-between;
-      padding: 20px;
-    }
-
-    header nav ul {
-      list-style: none;
-      display: flex;
-      align-self: center;
-    }
-
-    header nav ul li a {
-      text-decoration: none;
-      color: brown;
-      padding: 0 10px;
-    }
-
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      gap: 0px 0px;
-      grid-auto-flow: row;
-      grid-template-areas:
-        "item1 item2 item3";
-      padding: 40px;
-      font-size: 25px;
-    }
-
-    .item1 {
-      grid-area: item1;
-    }
-
-    .item2 {
-      grid-area: item2;
-    }
-
-    .item3 {
-      grid-area: item3;
-    }
-
-
-
-
-
-
-
-    main section {
-      width: 30%;
-    }
-
-
-    footer {
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
 </head>
-
+<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='main.css') }}">
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href=" #home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <div class="item1">
-      <pre>
+       </ul>
+</nav>
+</header>
+<div class="container">
+  <div class="item1">
+    <pre>
                ,,==="""""""===,,
            ,==""' |\ |   /\   `""==,
         ,="'|\    | \|  /__\   /\  `"=,
@@ -117,14 +42,20 @@
           `""=,__             __,=""'     
                ``""=========""''
       </pre>
-    </div>
-    <div class="item2">
-      <h1>Welcome 2 my website</h1>
-      <p> This is a place for silliness and things that i like.<p>
-      <img src="images/furcoat.jpg" alt="me">
-    </div>
-    <div class="item3">
-      <pre>
+  </div>
+  <div class="item2">
+    <h1>Welcome 2 my website</h1>
+    <p> This is a place for silliness and things that i like.
+    <p>
+      <img src="{{ url_for('static', filename='images/furcoat.jpg')}}" width="400" height="500" />
+
+
+
+
+
+  </div>
+  <div class="item3">
+    <pre>
         ⠀⠀⠀⠀⣠⣀⣀⣀⣄⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣻⣿⡁⠀⠈⢹⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣵⣿⠁⠀⠀⢼⣀⣀⣀⡀⠀⠀⠀⠀
@@ -147,8 +78,8 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣟⣡⣿⢛⣵⣷⠟⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
       </pre>
-    </div>
   </div>
+</div>
 </body>
 
 </html>
