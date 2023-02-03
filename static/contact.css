@@ -45,6 +45,9 @@ nav a:hover {
   background-color: rgb(255, 255, 255);
   padding: 40px;
   border-radius: 10px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
   box-shadow: 0 0 10px #333;
 }
 

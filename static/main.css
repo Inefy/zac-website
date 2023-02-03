@@ -1,78 +1,89 @@
-body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #add8e6;
-    color: brown;
-}
-
-header nav {
-    display: flex;
-    float:right;
-    align-self: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    align-self: center;
-}
-
-header nav ul li a {
-    text-decoration: none;
-
-    color: brown;
-    padding: 0 10px;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "item1 item2 item3";
-    padding: 40px;
-    font-size: 25px;
-}
-
-.item1 {
-    grid-area: item1;
-    justify-content: center;
-}
-
-.item2 {
-    grid-area: item2;
-    text-align:center;
-}
-
-.item3 {
-    grid-area: item3;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-main section {
-    width: 30%;
-}
-
-
-footer {
+.section {
+    padding: 80px 0;
     text-align: center;
+    background-color: #f8f8f8;
+  }
+  .contact {
+    text-align:center;
+    color:white;
+  }
+  header {
+    background-color: #333;
     padding: 20px;
-}
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+    transform: translateY(-10px);
+  }
+  
+  .section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-image {
+    width: 30%;
+    margin-right: 40px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px #ddd;
+  }
+  
+  .about-text {
+    width: 70%;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  

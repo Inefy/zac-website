@@ -1,85 +1,28 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Home</title>
-</head>
-<link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='main.css') }}">
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="blog">Blog</a></li>
-        <li><a href="contact">Contact</a></li>
-       </ul>
-</nav>
-</header>
-<div class="container">
-  <div class="item1">
-    <pre>
-               ,,==="""""""===,,
-           ,==""' |\ |   /\   `""==,
-        ,="'|\    | \|  /__\   /\  `"=,
-      /"    |,"\  |  | /'  `\ /  )     "\
-    /"  ,"  |                 `\/    /|  "\
-   /'  |   ,                       /",|   `\
-  /'   ",/"                           |    `\
- /'      I=I=I               ,d8ba,___      `\
-/'     I=8=8=8=I_I_          88888P"""       `\
-|   xXXXXXXXXXXXXXXXxIxx    ,888"             |
-| ~XXXXXXXXXXXXXXX~-~-~-~-~ d888~-~-~-~-~-~-~ |
-| ~-~-~-~-~-~-~-~-,aad888ba,8888,-~-~-~-~-~-~ |
-| ~-~-~-~-~-~-,ad888888888888888b-~-~-~-~-~-~ |
-\ ~-~-~-~-~,ad8888888888888888888-~-~-~-~-~-~ /
-`\ -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~- /'
- `\ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~,-,~~~~~ /'
-  `\    /"\         1 9 9 4        \ /\    /'
-   `\  "\,/'                   |\   `\ `  /'
-     "\      /""\   |    |     |,'\     /"
-       `"=,_ \__/   |__  |__   |    ,="'  
-          `""=,__             __,=""'     
-               ``""=========""''
-      </pre>
-  </div>
-  <div class="item2">
-    <h1>Welcome 2 my website</h1>
-    <p> This is a place for silliness and things that i like.
-    <p>
-      <img src="{{ url_for('static', filename='images/furcoat.jpg')}}" width="400" height="500" />
-
-
-
-
-
-  </div>
-  <div class="item3">
-    <pre>
-        ⠀⠀⠀⠀⣠⣀⣀⣀⣄⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣻⣿⡁⠀⠈⢹⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣵⣿⠁⠀⠀⢼⣀⣀⣀⡀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣠⠾⠛⠁⠀⠀⠀⠀⠀⠁⠉⠉⠉⠛⠲⣦⡀
-⠀⠀⠀⠀⠀⣠⡞⠁⠀⠀⠀⣀⣤⣤⣤⣤⣤⣀⣀⠀⠀⠀⣼⠟
-⠀⠀⠀⠀⣼⡟⠀⠀⠀⢰⣿⣭⣿⣿⣿⣭⣖⣫⠟⣛⠷⣾⠃⠀
-⠀⠀⠀⢰⣿⡇⠀⠀⠀⠸⣾⡛⠀⠀⠀⠀⠉⠙⠛⠶⢾⠃⠀⠀
-⠀⠀⠀⣸⡥⢿⡀⠀⠀⠀⠈⠙⠳⢦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠻⣶⠋⡻⣦⡀⠀⠀⠀⠀⠀⠀⠉⠛⠳⢦⣄⠀⠀⠀⠀
-⠀⠀⠀⠀⠻⣯⣠⠜⡹⠷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠈⠻⣦⠀⠀
-⠀⠀⠀⠀⠀⠈⠛⠾⣤⣖⣩⢜⡫⢟⣶⣤⣀⠀⠀⠀⠀⠘⣧⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠳⢯⣖⡩⠽⣷⠀⠀⠀⠀⢹⡀
-⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡖⠊⣿⠀⠀⠀⠀⢸⠇
-⠀⠀⣤⣶⣶⡟⠓⠶⢤⣄⣀⡀⠀⠀⣸⣷⡿⠋⠀⠀⠀⢀⣾⠀
-⠀⣼⣛⣥⡟⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⣠⣾⡿⠀
-⠘⢿⣥⠟⢷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣾⣿⡟⠁⠀
-⠀⠀⠈⠻⣯⣞⡩⠟⣻⠿⣻⢾⡆⠀⠀⠘⣟⣱⣿⠿⠋⠀⠀⠀
-⠀⠀⠀⠀⠀⠉⠙⠛⠛⠻⣧⢼⡇⠀⠀⠀⣿⠋⠁⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡷⢺⣧⣤⣤⣤⣿⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣟⣡⣿⢛⣵⣷⠟⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
-      </pre>
-  </div>
-</div>
-</body>
-
-</html>
+<body>  
+    <script src="/static/smoothscrolling.js"></script>
+    <header>
+        <div class="contact">
+        <h1>About Me</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+           </ul>
+    </nav>
+    </header>
+<section id="about" class="section">
+    <h2 class="section-header">About Me</h2>
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <div class="section-content">
+      <div class="about-image">
+        <img src="{{ url_for('static', filename='images/furcoat.jpg')}}" width="400" height="500" />
+      </div>
+      <div class="about-text">
+        <p>Hi, my name is Zac, and I am a 4th year computer science student at Memorial University. I have a passion for designing and developing products. </p>
+        <p>I enjoy playing videogames and also trying to spend time out through hiking and photography.</p>
+        <a href="#" class="cta-button">Learn More</a>
+      </div>
+    </div>
+  </section>
+  </body>
