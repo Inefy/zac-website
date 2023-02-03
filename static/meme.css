@@ -6,7 +6,7 @@ body {
 
 header nav {
     display: flex;
-    float:right;
+    float: right;
     align-self: center;
     justify-content: space-between;
     padding: 20px;
@@ -53,7 +53,7 @@ main {
 
 .item2 {
     grid-area: item2;
-    text-align:center;
+    text-align: center;
 }
 
 .item3 {

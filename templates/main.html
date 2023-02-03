@@ -1,33 +1,32 @@
-<body>  
+<body>
     <script src="/static/smoothscrolling.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='base.css') }}">
     <header>
-        <div class="contact">
-        <h1>About Me</h1>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
-           </ul>
-    </nav>
+        <div class="title">
+            <h1>About Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
     </header>
-<section id="about" class="section">
-    <h2 class="section-header">About Me</h2>
-    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='main.css') }}">
-    <div class="section-content">
-      <div class="about-image">
-        <img src="{{ url_for('static', filename='images/furcoat.jpg')}}" width="400" height="500" />
-      </div>
-      <div class="about-text">
-        <p>Hi, my name is Zac, and I am a 4th year computer science student at Memorial University. I have a passion for designing and developing products. </p>
-        <p>I enjoy playing videogames and also trying to spend time out through hiking and photography.</p>
-        <a href="#" class="cta-button">Learn More</a>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='socials.css') }}">
-    <a href="https://www.linkedin.com/in/zac-batten/" class="linkedin-button">Visit my LinkedIn profile</a>
-    <a href="https://github.com/Inefy" class="github-button">Visit my GitHub profile</a>
-  </footer>
-  </body>
+    <section id="about" class="section">            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+        <div class="section-content">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/furcoat.jpg')}}" width="400" height="500" />
+            </div>
+            <div class="about-text">
+                <p>Hi, my name is Zac, and I am a 4th year computer science student at Memorial University. I have a
+                    passion for designing and developing products. </p>
+                <p>I enjoy playing videogames and also trying to spend time out through hiking and photography.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="https://www.linkedin.com/in/zac-batten/" class="linkedin-button">Visit my LinkedIn profile</a>
+        <a href="https://github.com/Inefy" class="github-button">Visit my GitHub profile</a>
+    </footer>
+</body>
