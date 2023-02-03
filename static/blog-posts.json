@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Blog Post 1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique, nunc id sollicitudin consequat, elit odio bibendum elit, ac vestibulum elit enim vel nibh. Integer id molestie libero. Sed accumsan blandit risus, eget bibendum sem viverra vel.",
+        "author": "John Doe",
+        "date": "2022-12-31"
+    },
+    {
+        "title": "Blog Post 2",
+        "content": "In hac habitasse platea dictumst. Sed auctor, ipsum et laoreet tempor, elit libero feugiat libero, vel viverra velit velit eget odio. Nam vitae tempor enim, id varius dolor. Nam semper mauris vel mi elementum, non congue tellus malesuada.",
+        "author": "Jane Doe",
+        "date": "2022-12-30"
+    }
+]
