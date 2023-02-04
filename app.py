@@ -15,5 +15,10 @@ def projects():
 def contact():
     return render_template("contact.html")
 
+@app.route("/meme")
+def meme():
+    return render_template("meme.html")
+
+
 if __name__ == "__main__":
     app.run()
